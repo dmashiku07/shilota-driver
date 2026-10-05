@@ -1,0 +1,660 @@
+<resources>
+    <string name="answer">Answer</string>
+    <string name="decline">Decline</string>
+    <string name="app_name" translatable="false">Shilota Driver</string>
+    <string name="rider_package_name" translatable="false">com.app.cabiappuser</string>
+    <string name="fb_app_name" translatable="false">HSTaxiDriverApp</string>
+    <string name="facebook_app_id" translatable="false">000000001023</string>
+    <string name="notification_channel_id" translatable="false">shilota_notification_channel</string>
+
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+    <string name="passwordfilter" translatable="false">abcdefghijklmnopqrstuvwxyz1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ.$@#%-*:?!_,&amp;</string>
+    <string name="emailfilter" translatable="false">abcdefghijklmnopqrstuvwxyz1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ.@-_</string>
+    <string name="namefilter" translatable="false">abcdefghijklmnopqrstuvwxyz1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ .@-_</string>
+    <string name="numberfilter" translatable="false">1234567890+-</string>
+    <string name="layout_direction">0</string>
+    <string name="ad_mob_id" translatable="false"> </string>
+
+    <string name="shilota_driver_label" translatable="false">Shilota Driver</string>
+    <string name="login">Login</string>
+    <string name="signup">Sign Up</string>
+    <string name="signin">Sign In</string>
+    <string name="signin_using">Sign In Using</string>
+    <string name="signup_using">Sign Up Using</string>
+    <string name="facebook">Facebook</string>
+    <string name="google">Google</string>
+    <string name="login_welcome_back">Welcome back</string>
+    <string name="login_driver_subtitle">Sign in to manage trips, stay available, and keep your Shilota Driver day moving.</string>
+    <string name="signup_get_started">Create your account</string>
+    <string name="signup_driver_subtitle">Join Shilota Driver with a cleaner setup flow, then complete your profile details and start taking trips.</string>
+    <string name="drawer_rides_subtitle">Review ongoing and past trips with a cleaner driver-facing ride history.</string>
+    <string name="drawer_wallet_subtitle">Track available driver balance and top up when you need faster settlements.</string>
+    <string name="drawer_help_subtitle">Find quick answers or reach support without leaving the app flow.</string>
+    <string name="drawer_profile_subtitle">Manage your driver profile, vehicle details, safety settings, and documents.</string>
+    <string name="drawer_notifications_subtitle">Important ride, payout, and account updates appear here first.</string>
+    <string name="drawer_completion_subtitle">Review payout totals and trip breakdown before closing the ride.</string>
+    <string name="drawer_balance_label">Available balance</string>
+    <string name="drawer_support_badge">Driver support</string>
+    <string name="drawer_profile_badge">Verified driver profile</string>
+    <string name="drawer_notifications_badge">Latest account activity</string>
+    <string name="drawer_completion_badge">Trip summary</string>
+    <string name="or">or</string>
+    <string name="dont_hav_Acc">Don\'t have an account?</string>
+    <string name="createaccount">Create a account</string>
+    <string name="forgotpassword">Forgot Password</string>
+    <string name="already_member">Already a member?</string>
+    <string name="resend_verification">Resend verification code</string>
+    <string name="change_number">Change number</string>
+    <string name="reset">Reset</string>
+    <string name="next">Next</string>
+    <string name="verify">Verify</string>
+
+    <string name="name">NAME</string>
+    <string name="email">EMAIL</string>
+    <string name="location">LOCATION</string>
+    <string name="password">PASSWORD</string>
+    <string name="re_password">RE-ENTER PASSWORD</string>
+    <string name="countrycode">COUNTRY CODE</string>
+    <string name="phonenumber">PHONE NUMBER</string>
+    <string name="enteryourotp">ENTER YOUR OTP</string>
+    <string name="enterotp">Please enter 6 digit OTP, We just sent to</string>
+    <string name="selectlocation">Select Location</string>
+    <string name="view_edit_profile">View and edit profile</string>
+    <string name="payment">Payment Method</string>
+    <string name="ridedetail">Ride Details</string>
+    <string name="rideearnings">Ride Earning</string>
+    <string name="advertisement">Advertisement</string>
+    <string name="help">Help</string>
+
+    <string name="fullname_error">Fullname should be atleast 3characters</string>
+    <string name="emailempty_error">Email cannot be empty</string>
+    <string name="passwordempty_error">Password cannot be empty</string>
+    <string name="email_error">Please check your Email ID</string>
+    <string name="password_error">Password should have atleast 6 characters</string>
+    <string name="repassword_error">Password entered does not match</string>
+
+    <string name="network_failure">Sorry! Not connected to internet</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="send">Send</string>
+    <string name="cancel">Cancel</string>
+    <string name="message">MESSAGE</string>
+    <string name="subject">SUBJECT</string>
+    <string name="contact">Contact</string>
+    <string name="contact_success_dialog">It is a long established fact that a reader will be distracted by the \n readable content of a page when looking of its layout.</string>
+    <string name="thankyou">Thank you</string>
+    <string name="notification">Notifications</string>
+    <string name="subject_error">Subject cannot be empty</string>
+    <string name="message_error">Message cannot be empty</string>
+    <string name="name_error">Name should be atleast 3 characters</string>
+    <string name="profile">Profile</string>
+    <string name="ridecompletion">Ride Completion</string>
+    <string name="phone">PHONE</string>
+    <string name="emergency_contact">Emergency contact</string>
+    <string name="sos_alert">EMERGENCY ALERT</string>
+    <string name="logout">Logout</string>
+    <string name="nextinspection">Next inspection on </string>
+    <string name="pick_image_intent_text">Choose an image</string>
+    <string name="save">Save</string>
+    <string name="password_lbl">Password</string>
+    <string name="old_password">OLD PASSWORD</string>
+    <string name="new_password">NEW PASSWORD</string>
+    <string name="reenter_password">RE-ENTER PASSWORD</string>
+    <string name="em_oldpswd_error">Old Password cannot be empty</string>
+    <string name="em_newpswd_error">New Password cannot be empty</string>
+    <string name="em_reenpswd_error">Re-enter Password cannot be empty</string>
+    <string name="phonenumber_error">Phone number should be 10 Characters</string>
+    <string name="add_contact">Add Contact</string>
+    <string name="contacts">Contacts</string>
+    <string name="use_phone_contact">Use Phone Contact</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="payment_management">Payment Management</string>
+    <string name="paypal">Paypal</string>
+    <string name="collect">Collect</string>
+    <string name="bank_account">By Cash</string>
+    <string name="braintree">Bank Details</string>
+    <string name="userdetail">User Detail</string>
+    <string name="ridesummary">Ride Summary</string>
+    <string name="grandtotal">Grand Total</string>
+    <string name="primaryKey_hint"> RECIPIENT\'S NAME</string>
+    <string name="address"> RECIPIENT\'S ADDRESS</string>
+    <string name="paymenttype">Payment Type</string>
+    <string name="publickey_hint">ACCOUNT NUMBER</string>
+    <string name="merchantid_hint">ROUTING NUMBER</string>
+    <string name="bankacc_error">Bank account cannot be empty</string>
+    <string name="recipientname_error">Recipient name cannot be empty</string>
+    <string name="ride_fare">Ride fare</string>
+    <string name="tax">Tax</string>
+    <string name="total_bill">Total Bill</string>
+    <string name="routing_error">Routing cannot be empty</string>
+    <string name="vehicle_name">VEHICLE NAME</string>
+    <string name="vehicle_number">VEHICLE NUMBER</string>
+    <string name="vehicle_type">VEHICLE TYPE</string>
+    <string name="vehicle_information">VEHICLE INFORMATION</string>
+    <string name="document_information">DOCUMENT INFORMATION</string>
+    <string name="driver_license">DRIVER LICENSE</string>
+    <string name="expired_on">Expires on</string>
+    <string name="contract_permit_certificate">CONTRACT PERMIT CERTIFICATE</string>
+    <string name="motor_insurance_certificate">MOTOR INSURANCE</string>
+    <string name="security_deposit">Security Deposit</string>
+    <string name="vehicle_inspection">Vehicle Inspection</string>
+    <string name="driver_onboarding">Driver Onboarding</string>
+    <string name="payment_details">Payment Details</string>
+    <string name="vehicle_details">Vehicle Details</string>
+    <string name="vehicle_inspect_admin">Enabled After Paying Security Deposited with the Admin,Contact Admin for Quick Details</string>
+    <string name="onboarding_message_pending">Complete each step and wait for admin approval.</string>
+    <string name="onboarding_message_waiting">Your documents are complete and waiting for admin approval.</string>
+    <string name="onboarding_message_approved">Your driver account is approved.</string>
+    <string name="status_pending">pending</string>
+    <string name="status_not_approved">Not approved</string>
+    <string name="status_approved">Approved</string>
+    <string name="onboarding_message_not_approved">Your account is not approved yet. Complete the required details and wait for administrator approval.</string>
+    <string name="loading_vehicle_options">Loading vehicle options…</string>
+    <string name="vehicle_options_unavailable">No options are available right now. Please try again.</string>
+    <string name="vehicle_approval">Vehicle approval</string>
+    <string name="license_short">License</string>
+    <string name="insurance_short">Insurance</string>
+    <string name="rc_book_short">RC Book</string>
+    <string name="i_agree">I Agree</string>
+    <string name="no_of_seats">NO OF SEATS</string>
+    <string name="body_type">BODY TYPE</string>
+    <string name="amenities">AMENITIES</string>
+    <string name="licence_number">LICENSE NUMBER</string>
+    <string name="licence_document">LICENSE DOCUMENT</string>
+    <string name="licence_expiry_date">LICENSE EXPIRY DATE</string>
+    <string name="insurance_number">INSURANCE NUMBER</string>
+    <string name="insurance_document">INSURANCE DOCUMENT</string>
+    <string name="insurance_expiry_date">INSURANCE EXPIRY DATE</string>
+    <string name="rc_book_number">RC BOOK NUMBER</string>
+    <string name="rc_book_document">RC BOOK DOCUMENT</string>
+    <string name="rc_book_expiry_date">RC BOOK EXPIRY DATE</string>
+    <string name="ratings">Ratings</string>
+    <string name="something_went_to_be_wrong">Something Went to be Wrong</string>
+    <string name="online">Online</string>
+    <string name="pickup">Pickup</string>
+    <string name="navigate">Navigate</string>
+    <string name="call_txt">Call</string>
+    <string name="offline">Offline</string>
+    <string name="active">Active</string>
+    <string name="today">Today</string>
+    <string name="completed">Completed</string>
+    <string name="thismonth">This Month</string>
+    <string name="rides">Rides</string>
+    <string name="advertisements">Advertisements</string>
+    <string name="total_km">Total Km</string>
+    <string name="earned">Earned</string>
+    <string name="total_earnings">Total Earnings</string>
+    <string name="bookings">Bookings</string>
+    <string name="cash_collected">Cash Collected</string>
+    <string name="available_amount">Available Amount</string>
+    <string name="paid_directly_to_driver">Paid directly to driver</string>
+    <string name="subscription_plans">Subscription Plans</string>
+    <string name="current_subscription">Current subscription</string>
+    <string name="available_plans">Available plans</string>
+    <string name="no_active_subscription">No active subscription yet</string>
+    <string name="subscription_pick_plan_hint">Choose a plan to activate driver access</string>
+    <string name="subscription_status_none">Status: not subscribed</string>
+    <string name="subscription_status_format">Status: %1$s • Payment: %2$s</string>
+    <string name="subscription_expires_on">Expires on %1$s</string>
+    <string name="subscription_daily_limit">Daily limit: %1$s</string>
+    <string name="subscription_usage_placeholder">Usage refreshes after activation</string>
+    <string name="subscription_usage_summary">%1$s/%2$s used • %3$s left</string>
+    <string name="subscription_daily_limit_reached">Daily ride limit reached</string>
+    <string name="subscription_complete_payment_hint">Complete payment to activate this plan.</string>
+    <string name="subscription_payment_success">Subscription activated successfully</string>
+    <string name="subscription_payment_pending">Subscription payment is still pending</string>
+    <string name="accept_passenger_price">Accept passenger price</string>
+    <string name="passenger_price_hint">Passenger proposed price</string>
+    <string name="no_subscription_plans">No subscription plans available right now</string>
+    <string name="subscription_validity_placeholder">Validity unavailable</string>
+    <string name="subscription_plan_description_placeholder">Subscription plan details will appear here when available.</string>
+    <string name="plan_rides_per_day">%1$s rides/day</string>
+    <string name="unlimited_rides_badge">Unlimited rides</string>
+    <string name="unlimited">Unlimited</string>
+    <string name="buy_plan">Buy plan</string>
+    <string name="renew_plan">Renew plan</string>
+    <string name="complete_payment">Complete payment</string>
+    <string name="online_mode_msg">You\'re in Online Mode,Enabled Booking</string>
+    <string name="pleasewait">Please wait</string>
+    <string name="em_oldpswd_mismatch_error">Old Password is mismatch with your Previous Password</string>
+    <string name="really_logout">Are you really want to Logout?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="change">Change</string>
+    <string name="amenities_title">Amenities</string>
+    <string name="vehicle_type_title">Vehicle Type</string>
+    <string name="change_name">Change Name</string>
+    <string name="update_name_successful">Name has updated Successfully</string>
+    <string name="update_name_unsuccessful">Name has not updated</string>
+    <string name="update_phone_successful">Phone number has updated Successfully</string>
+    <string name="update_phone_unsuccessful">Phone number has not updated</string>
+    <string name="document_uploaded">*File Uploaded*</string>
+    <string name="braintree_details">Bank details need to be added</string>
+    <string name="file_uploaded">File Uploaded Successfully</string>
+    <string name="uploading_document">Uploading document...</string>
+    <string name="saving_vehicle_details">Saving vehicle details...</string>
+    <string name="fill_all">All Fields are mandatory to complete registration process</string>
+    <string name="unsupported_format">Pdf and Jpg are the only supported file formats to be Uploaded</string>
+    <string name="chose_location">Location is mandatory</string>
+    <string name="exit_msg">Tap back again to exit</string>
+    <string name="acc_created">Account Created without Phone number. Login to continue!</string>
+    <string name="online_notify">You are Online!</string>
+    <string name="app_open">Keep the app open to receive rides</string>
+    <string name="arivingnow">Arriving Now</string>
+    <string name="beginride">Begin Ride</string>
+    <string name="completeride">Complete Ride</string>
+    <string name="missing_rides">You are missing Nearby Rides</string>
+    <string name="otp">OTP</string>
+    <string name="no_ride">No Rides Yet</string>
+    <string name="ride_history">Ride History</string>
+    <string name="past">Past</string>
+    <string name="emergency_alert">Emergency Alert</string>
+    <string name="use_emergency">Use incase of Emergency</string>
+    <string name="emergency_des">We collects location data during an active booking from your device. Including when the app is in background, This data is used to ensure that user have a smooth and safe ride experiance.</string>
+    <string name="call_police">Call police control room</string>
+    <string name="alert_emengency">Alert emergency contact</string>
+    <string name="cancelled">Cancelled</string>
+    <string name="ridecancelled">This Ride has been cancelled by user</string>
+    <string name="ongoing">OnGoing</string>
+    <string name="booked">Booked</string>
+    <string name="something_wrong">Something Went Wrong"</string>
+    <string name="no_contacts">No Contacts Added</string>
+    <string name="no_notification">No Notifications Yet</string>
+    <string name="address_error">Address cannot be empty</string>
+    <string name="consumer_vehicle_nationwide">Consumer Vehicles Nationwide</string>
+    <string name="welcome_badge">DRIVER APP</string>
+    <string name="welcome_heading">Drive on your schedule</string>
+    <string name="welcome_subtitle">Accept nearby trips, stay online, and keep earnings moving with a simpler Shilota Driver workflow.</string>
+    <string name="welcome_driver_heading">Drive with Shilota</string>
+    <string name="welcome_driver_subtitle">Accept rides, manage vehicle approval, track earnings, and stay connected with riders.</string>
+    <string name="sign_in">Sign In</string>
+    <string name="create_driver_account">Create Driver Account</string>
+    <string name="drop">Drop</string>
+    <string name="enter_vehicle_name">Enter vehicle name</string>
+    <string name="waiting_for_admin_approval">Waiting for Admin Approval</string>
+    <string name="accept_ride">Accept Ride</string>
+    <string name="submit_offer">Submit Offer</string>
+    <string name="offer_price_hint">Enter your price (TZS)</string>
+    <string name="ride_pickup_value">Pickup: %1$s</string>
+    <string name="ride_destination_value">Destination: %1$s</string>
+    <string name="price_tzs_value">TZS %1$s</string>
+    <string name="not_available">Not available</string>
+    <string name="offer_price_required">Enter a valid price before sending the offer</string>
+    <string name="offer_submitted">Offer submitted</string>
+    <string name="ok">OK</string>
+    <string name="account_deactivate_error">Your account has been deactivated by admin</string>
+    <string name="destination_broadcast_title">Destination Broadcast</string>
+    <string name="destination_broadcast_menu">Destination Broadcasts</string>
+    <string name="origin_label_hint">Origin label</string>
+    <string name="destination_label_hint">Destination label</string>
+    <string name="lat_hint">Latitude</string>
+    <string name="lng_hint">Longitude</string>
+    <string name="departure_time_hint">Departure time (ISO format)</string>
+    <string name="price_per_passenger_hint">Price per passenger (TZS)</string>
+    <string name="available_seats_hint">Available seats</string>
+    <string name="notification_radius_hint">Notification radius (km)</string>
+    <string name="broadcast_duration_hint">Broadcast duration (minutes)</string>
+    <string name="create_destination_broadcast">Create broadcast</string>
+    <string name="active_destination_broadcasts">Active broadcasts</string>
+    <string name="destination_join_requests">Join requests</string>
+    <string name="destination_broadcast_created">Destination broadcast created</string>
+    <string name="no_destination_broadcasts">No destination broadcasts yet</string>
+    <string name="no_destination_join_requests">No join requests yet</string>
+    <string name="cancel_broadcast">Cancel</string>
+    <string name="complete_broadcast">Complete</string>
+    <string name="accept_join_request">Accept</string>
+    <string name="reject_join_request">Reject</string>
+    <string name="destination_broadcast_fee_loading">Loading broadcast fee…</string>
+    <string name="destination_broadcast_fee_summary">Broadcast fee: %1$s. The broadcast only goes live after backend payment confirmation.</string>
+    <string name="destination_broadcast_fee_unavailable">Broadcast fee unavailable right now.</string>
+    <string name="retry_payment">Retry payment</string>
+    <string name="destination_broadcast_payment_success">Destination broadcast payment confirmed</string>
+    <string name="destination_broadcast_payment_pending">Destination broadcast payment is still pending</string>
+    <string name="language">Language</string>
+    <string name="ontheway">ontheway</string>
+    <string name="otp_continue">Enter OTP to continue Ride</string>
+    <string name="incorrect_otp">Incorrect OTP</string>
+    <string name="ride_with">Ride with</string>
+    <string name="select_your_image">Select your image:</string>
+    <string name="user_updated_success">User updated successfully</string>
+    <string name="select_category">Select any category</string>
+    <string name="enable_camera_storage">Enable permission to access camera and storage</string>
+    <string name="enable_location_permission">Enable location permission to use your current location</string>
+    <string name="update_password_success">Password changed successfully</string>
+    <string name="update_password_unsuccess">Password has not updated</string>
+    <string name="you_are_already_in_live">You are already in ride</string>
+    <string name="contact_deleted_success">Contact deleted successfully</string>
+    <string name="payment_success">Payment Completed successfully</string>
+    <string name="kindly_give_review">Kindly enter your review!</string>
+    <string name="payment_completed">Payment Completed</string>
+    <string name="wallet_credited">Wallet Credited</string>
+    <string name="wallet">Wallet</string>
+    <string name="alert">Alert</string>
+    <string name="balance">Balance</string>
+    <string name="add_shilota_money">Add Shilota Money</string>
+    <string name="its_quick_safe">Its quick, safe and secure</string>
+    <string name="add_money">Add Money</string>
+    <string name="money_using">Money only using Shilota booking.</string>
+    <string name="enter_money">Please enter an amount</string>
+    <string name="wallet_history">Wallet History</string>
+    <string name="no_wallet">No Wallet History Yet</string>
+    <string name="addmoney">addmoney</string>
+    <string name="amount_credit_success">Amount credited to your wallet successfully</string>
+    <string name="amount_credit_unsuccess">Amount not credited to your wallet</string>
+    <string name="admin">Admin</string>
+    <string name="ride_accepted">Ride Accepted</string>
+    <string name="ride_completed">Ride Completed</string>
+    <string name="ride_cancelled">Ride Cancelled</string>
+    <string name="ringing">Ringing</string>
+    <string name="audio_calling">Audio calling</string>
+    <string name="video_calling">Video calling</string>
+    <string name="connecting">Connecting…</string>
+    <string name="capture_permission_description">User didn\'t give permission to capture the screen.</string>
+    <string name="capture_permission_error">User revoked permission to capture the screen.</string>
+    <string name="warning">Warning</string>
+    <string name="call_should_be_disconnected">Call could be disconnected. Do you want to disconnect?</string>
+    <string name="okay">Sure</string>
+    <string name="nope">No</string>
+    <string name="call_declined">Call declined</string>
+    <string name="call_cancelled">Call Cancelled</string>
+    <string name="this_app_requires">This app requires</string>
+    <string name="permission_to_access_the_features">permissions to access the features. Please turn on</string>
+    <string name="grant">Allow</string>
+    <string name="hide">Hide</string>
+    <string name="call_ended">Call ended</string>
+    <string name="away_from_chat">away from chat</string>
+    <string name="failed_to_open_video_file">Failed to open video file for output:</string>
+    <string name="camera_record_audio_phone">Camera, Record Audio, Phone</string>
+    <string name="swipe_up_to_accept">Swipe up to accept</string>
+    <string name="swipe_down_to_decline">Swipe down to decline</string>
+    <string name="pop_up_permission_description">Allow the pop-up permission to enjoy the incoming call functionalities even if the app is not in background</string>
+
+
+    <!--APPRTC Strings-->
+    <string name="invalid_url_title">Invalid URL</string>
+    <string name="invalid_url_text">The URL or room name you entered resulted in an invalid URL: %1$s
+    </string>
+    <string name="channel_error_title">Connection error</string>
+    <string name="connecting_to">Connecting to: %1$s</string>
+    <string name="missing_url">FATAL ERROR: Missing URL to connect to.</string>
+    <string name="pref_room_key" translatable="false">room_preference</string>
+    <string name="pref_room_list_key" translatable="false">room_list_preference</string>
+
+    <string name="pref_videosettings_key" translatable="false">video_settings_key</string>
+    <string name="pref_videosettings_title" translatable="false">WebRTC video settings.</string>
+
+    <string name="pref_videocall_key" translatable="false">videocall_preference</string>
+    <string name="pref_videocall_title" translatable="false">Video call.</string>
+    <string name="pref_videocall_dlg" translatable="false">Enable video in a call.</string>
+    <string name="pref_videocall_default" translatable="false">true</string>
+
+    <string name="pref_screencapture_key" translatable="false">screencapture_preference</string>
+    <string name="pref_screencapture_title" translatable="false">Use screencapture.</string>
+    <string name="pref_screencapture_default" translatable="false">false</string>
+
+    <string name="pref_camera2_key" translatable="false">camera2_preference</string>
+    <string name="pref_camera2_title" translatable="false">Use Camera2.</string>
+    <string name="pref_camera2_default" translatable="false">true</string>
+    <string name="pref_camera2_not_supported" translatable="false">Not supported on this device.</string>
+
+    <string name="pref_resolution_key" translatable="false">resolution_preference</string>
+    <string name="pref_resolution_title" translatable="false">Video resolution.</string>
+    <string name="pref_resolution_dlg" translatable="false">Enter AppRTC local video resolution.</string>
+    <string name="pref_resolution_default" translatable="false">Default</string>
+
+    <string name="pref_fps_key" translatable="false">fps_preference</string>
+    <string name="pref_fps_title" translatable="false">Camera fps.</string>
+    <string name="pref_fps_dlg" translatable="false">Enter local camera fps.</string>
+    <string name="pref_fps_default" translatable="false">Default</string>
+
+    <string name="pref_capturequalityslider_key" translatable="false">capturequalityslider_preference</string>
+    <string name="pref_capturequalityslider_title" translatable="false">Capture quality slider.</string>
+    <string name="pref_capturequalityslider_dlg" translatable="false">Enable slider for changing capture quality.</string>
+    <string name="pref_capturequalityslider_default" translatable="false">false</string>
+
+    <string name="pref_maxvideobitrate_key" translatable="false">maxvideobitrate_preference</string>
+    <string name="pref_maxvideobitrate_title" translatable="false">Maximum video bitrate setting.</string>
+    <string name="pref_maxvideobitrate_dlg" translatable="false">Maximum video bitrate setting.</string>
+    <string name="pref_maxvideobitrate_default" translatable="false">Default</string>
+
+    <string name="pref_maxvideobitratevalue_key" translatable="false">maxvideobitratevalue_preference</string>
+    <string name="pref_maxvideobitratevalue_title" translatable="false">Video encoder maximum bitrate.</string>
+    <string name="pref_maxvideobitratevalue_dlg" translatable="false">Enter video encoder maximum bitrate in kbps.</string>
+    <string name="pref_maxvideobitratevalue_default" translatable="false">1700</string>
+
+    <string name="pref_videocodec_key" translatable="false">videocodec_preference</string>
+    <string name="pref_videocodec_title" translatable="false">Default video codec.</string>
+    <string name="pref_videocodec_dlg" translatable="false">Select default video codec.</string>
+    <string name="pref_videocodec_default" translatable="false">VP8</string>
+
+    <string name="pref_hwcodec_key" translatable="false">hwcodec_preference</string>
+    <string name="pref_hwcodec_title" translatable="false">Video codec hardware acceleration.</string>
+    <string name="pref_hwcodec_dlg" translatable="false">Use hardware accelerated video codec (if available).</string>
+    <string name="pref_hwcodec_default" translatable="false">true</string>
+
+    <string name="pref_capturetotexture_key" translatable="false">capturetotexture_preference</string>
+    <string name="pref_capturetotexture_title" translatable="false">Video capture to surface texture.</string>
+    <string name="pref_capturetotexture_dlg" translatable="false">Capture video to textures (if available).</string>
+    <string name="pref_capturetotexture_default" translatable="false">true</string>
+
+    <string name="pref_flexfec_key" translatable="false">flexfec_preference</string>
+    <string name="pref_flexfec_title" translatable="false">Codec-agnostic Flexible FEC.</string>
+    <string name="pref_flexfec_dlg" translatable="false">Enable FlexFEC.</string>
+    <string name="pref_flexfec_default" translatable="false">false</string>
+
+    <string name="pref_value_enabled" translatable="false">Enabled</string>
+    <string name="pref_value_disabled" translatable="false">Disabled</string>
+
+    <string name="pref_audiosettings_key" translatable="false">audio_settings_key</string>
+    <string name="pref_audiosettings_title" translatable="false">WebRTC audio settings.</string>
+
+    <string name="pref_startaudiobitrate_key" translatable="false">startaudiobitrate_preference</string>
+    <string name="pref_startaudiobitrate_title" translatable="false">Audio bitrate setting.</string>
+    <string name="pref_startaudiobitrate_dlg" translatable="false">Audio bitrate setting.</string>
+    <string name="pref_startaudiobitrate_default" translatable="false">Default</string>
+
+    <string name="pref_startaudiobitratevalue_key" translatable="false">startaudiobitratevalue_preference</string>
+    <string name="pref_startaudiobitratevalue_title" translatable="false">Audio codec bitrate.</string>
+    <string name="pref_startaudiobitratevalue_dlg" translatable="false">Enter audio codec bitrate in kbps.</string>
+    <string name="pref_startaudiobitratevalue_default" translatable="false">32</string>
+
+    <string name="pref_audiocodec_key" translatable="false">audiocodec_preference</string>
+    <string name="pref_audiocodec_title" translatable="false">Default audio codec.</string>
+    <string name="pref_audiocodec_dlg" translatable="false">Select default audio codec.</string>
+    <string name="pref_audiocodec_default" translatable="false">OPUS</string>
+
+    <string name="pref_noaudioprocessing_key" translatable="false">audioprocessing_preference</string>
+    <string name="pref_noaudioprocessing_title" translatable="false">Disable audio processing.</string>
+    <string name="pref_noaudioprocessing_dlg" translatable="false">Disable audio processing pipeline.</string>
+    <string name="pref_noaudioprocessing_default" translatable="false">false</string>
+
+    <string name="pref_aecdump_key" translatable="false">aecdump_preference</string>
+    <string name="pref_aecdump_title" translatable="false">Create aecdump.</string>
+    <string name="pref_aecdump_dlg" translatable="false">Enable diagnostic audio recordings.</string>
+    <string name="pref_aecdump_default" translatable="false">false</string>
+
+    <string name="pref_enable_save_input_audio_to_file_key" translatable="false">enable_key</string>
+    <string name="pref_enable_save_input_audio_to_file_title" translatable="false">Save input audio to file.</string>
+    <string name="pref_enable_save_input_audio_to_file_dlg" translatable="false">Save input audio to file.</string>
+    <string name="pref_enable_save_input_audio_to_file_default" translatable="false">true</string>
+
+    <string name="pref_opensles_key" translatable="false">opensles_preference</string>
+    <string name="pref_opensles_title" translatable="false">Use OpenSL ES for audio playback.</string>
+    <string name="pref_opensles_dlg" translatable="false">Use OpenSL ES for audio playback.</string>
+    <string name="pref_opensles_default" translatable="false">false</string>
+
+    <string name="pref_disable_built_in_aec_key" translatable="false">disable_built_in_aec_preference</string>
+    <string name="pref_disable_built_in_aec_title" translatable="false">Disable hardware AEC.</string>
+    <string name="pref_disable_built_in_aec_dlg" translatable="false">Disable hardware AEC.</string>
+    <string name="pref_disable_built_in_aec_default" translatable="false">false</string>
+    <string name="pref_built_in_aec_not_available" translatable="false">Hardware AEC is not available</string>
+
+    <string name="pref_disable_built_in_agc_key" translatable="false">disable_built_in_agc_preference</string>
+    <string name="pref_disable_built_in_agc_title" translatable="false">Disable hardware AGC.</string>
+    <string name="pref_disable_built_in_agc_dlg" translatable="false">Disable hardware AGC.</string>
+    <string name="pref_disable_built_in_agc_default" translatable="false">false</string>
+    <string name="pref_built_in_agc_not_available" translatable="false">Hardware AGC is not available</string>
+
+    <string name="pref_disable_built_in_ns_key" translatable="false">disable_built_in_ns_preference</string>
+    <string name="pref_disable_built_in_ns_title" translatable="false">Disable hardware NS.</string>
+    <string name="pref_disable_built_in_ns_dlg" translatable="false">Disable hardware NS.</string>
+    <string name="pref_disable_built_in_ns_default" translatable="false">false</string>
+    <string name="pref_built_in_ns_not_available" translatable="false">Hardware NS is not available</string>
+
+    <string name="pref_disable_webrtc_agc_and_hpf_key" translatable="false">disable_webrtc_agc_and_hpf_preference</string>
+    <string name="pref_disable_webrtc_agc_and_hpf_title" translatable="false">Disable WebRTC AGC and HPF.</string>
+    <string name="pref_disable_webrtc_agc_default" translatable="false">false</string>
+
+    <string name="pref_speakerphone_key" translatable="false">speakerphone_preference</string>
+    <string name="pref_speakerphone_title" translatable="false">Speakerphone.</string>
+    <string name="pref_speakerphone_dlg" translatable="false">Speakerphone.</string>
+    <string name="pref_speakerphone_default" translatable="false">auto</string>
+
+    <string name="pref_datasettings_key" translatable="false">data_settings_key</string>
+    <string name="pref_datasettings_title" translatable="false">WebRTC data channel settings.</string>
+
+    <string name="pref_enable_datachannel_key" translatable="false">enable_datachannel_preference</string>
+    <string name="pref_enable_datachannel_title" translatable="false">Enable datachannel.</string>
+    <string name="pref_enable_datachannel_default" translatable="false">true</string>
+
+    <string name="pref_ordered_key" translatable="false">ordered_preference</string>
+    <string name="pref_ordered_title" translatable="false">Order messages.</string>
+    <string name="pref_ordered_default" translatable="false">true</string>
+
+    <string name="pref_data_protocol_key" translatable="false">Subprotocol</string>
+    <string name="pref_data_protocol_title" translatable="false">Subprotocol.</string>
+    <string name="pref_data_protocol_dlg" translatable="false">Enter subprotocol.</string>
+    <string name="pref_data_protocol_default" translatable="false" />
+
+    <string name="pref_negotiated_key" translatable="false">negotiated_preference</string>
+    <string name="pref_negotiated_title" translatable="false">Negotiated.</string>
+    <string name="pref_negotiated_default" translatable="false">false</string>
+
+    <string name="pref_max_retransmit_time_ms_key" translatable="false">max_retransmit_time_ms_preference</string>
+    <string name="pref_max_retransmit_time_ms_title" translatable="false">Max delay to retransmit.</string>
+    <string name="pref_max_retransmit_time_ms_dlg" translatable="false">Enter max delay to retransmit (in ms).</string>
+    <string name="pref_max_retransmit_time_ms_default" translatable="false">-1</string>
+
+    <string name="pref_max_retransmits_key" translatable="false">max_retransmits_preference</string>
+    <string name="pref_max_retransmits_title" translatable="false">Max attempts to retransmit.</string>
+    <string name="pref_max_retransmits_dlg" translatable="false">Enter max attempts to retransmit.</string>
+    <string name="pref_max_retransmits_default" translatable="false">-1</string>
+
+    <string name="pref_data_id_key" translatable="false">data_id_preference</string>
+    <string name="pref_data_id_title" translatable="false">Data id.</string>
+    <string name="pref_data_id_dlg" translatable="false">Enter data channel id.</string>
+    <string name="pref_data_id_default" translatable="false">-1</string>
+
+    <string name="pref_miscsettings_key" translatable="false">misc_settings_key</string>
+    <string name="pref_miscsettings_title" translatable="false">Miscellaneous settings.</string>
+
+    <string name="pref_room_server_url_key" translatable="false">room_server_url_preference</string>
+    <string name="pref_room_server_url_title" translatable="false">Room server URL.</string>
+    <string name="pref_room_server_url_dlg" translatable="false">Enter a room server URL.</string>
+    <string name="pref_room_server_url_default" translatable="false">https://appr.tc</string>
+
+    <string name="pref_displayhud_key" translatable="false">displayhud_preference</string>
+    <string name="pref_displayhud_title" translatable="false">Display call statistics.</string>
+    <string name="pref_displayhud_dlg" translatable="false">Display call statistics.</string>
+    <string name="pref_displayhud_default" translatable="false">false</string>
+
+    <string name="pref_tracing_key" translatable="false">tracing_preference</string>
+    <string name="pref_tracing_title" translatable="false">Debug performance tracing.</string>
+    <string name="pref_tracing_dlg" translatable="false">Debug performance tracing.</string>
+    <string name="pref_tracing_default" translatable="false">false</string>
+
+    <string name="pref_enable_rtceventlog_key" translatable="false">enable_rtceventlog_key</string>
+    <string name="pref_enable_rtceventlog_title" translatable="false">Enable RtcEventLog.</string>
+    <string name="pref_enable_rtceventlog_default" translatable="false">false</string>
+
+    <string name="pref_use_legacy_audio_device_key" translatable="false">use_legacy_audio_device_key</string>
+    <string name="pref_use_legacy_audio_device_title" translatable="false">Use legacy audio device.</string>
+    <string name="pref_use_legacy_audio_device_default" translatable="false">false</string>
+    <string name="banner_ad_id" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="deleteaccount">Delete Account</string>
+    <string name="accountdelete">Are you sure to delete your account</string>
+    <string name="okk">Ok</string>
+    <string name="accountdeleted">Your account has been deleted, Kindly contact admin to restore your account</string>
+    <string name="deletestatus">You\'re in ride now, you can\'t delete your account now</string>
+
+    <string name="txt_otp_verification">OTP Verification</string>
+    <string name="txt_enter_verification_code">Enter Verification Code</string>
+    <string name="txt_enter_your_mobile_number">Enter your mobile number</string>
+    <string name="txt_enterotp">Enter OTP</string>
+    <string name="txt_otpdesc">we will send you an OTP message</string>
+    <string name="txt_getotp">Get OTP</string>
+    <string name="txt_verify">Verify</string>
+    <string name="txt_entercode">Enter 6- Digit OTP Sent to </string>
+    <string name="txt_resend_otp">Re-Send OTP</string>
+    <string name="otp_empty">Please enter the OTP</string>
+    <string name="otp_incorrect">Incorrect OTP</string>
+    <string name="otp_resend">Re-Send OTP</string>
+
+    <string name="google_maps_api_key">YOUR_API_KEY_HERE</string>
+
+    <string name="forgot_password_phone_error">Please enter your phone number</string>
+    <string name="forgot_password_phone_not_valid">Phone number should be 10 Characters</string>
+    <string name="forgot_password_get_otp_first">Get OTP first</string>
+    <string name="forgot_password_reset_success">Password changed successfully</string>
+    <string name="lost_items">Lost Items</string>
+    <string name="tryagain">Try again</string>
+    <string name="no_lost_items">No lost item reports</string>
+    <string name="demand_heatmap_empty">No demand zones nearby</string>
+    <string name="demand_heatmap_loading">Loading demand zones</string>
+    <string name="emergency_contact_duplicate">This emergency contact already exists</string>
+    <string name="emergency_contact_limit">You can add up to 3 emergency contacts</string>
+    <string name="emergency_contact_minimum">Please add at least 2 emergency contacts</string>
+    <string name="mark_found">Mark Found</string>
+    <string name="mark_returned">Mark Returned</string>
+    <string name="call_rider">Call Rider</string>
+    <string name="lost_item_status_updated">Lost item status updated</string>
+    <string name="lost_item_follow_up">Lost Item Follow-up</string>
+    <string name="lost_item_follow_up_subtitle">Review the rider report and send updates from the same case thread.</string>
+    <string name="lost_item_follow_up_with">Follow up with %1$s from the same lost item case thread.</string>
+    <string name="no_lost_item_messages">No follow-up messages yet</string>
+    <string name="type_your_message">Type your update</string>
+    <string name="open_chat">Open Chat</string>
+    <string name="latest_update">Latest update</string>
+    <string name="upcoming_rides">Upcoming</string>
+    <string name="no_upcoming_rides">No upcoming scheduled rides</string>
+    <string name="upcoming_rides_subtitle">Review scheduled pickups, check timing, and pre-accept rides before dispatch.</string>
+    <string name="pre_accept">Pre-accept</string>
+    <string name="pre_accepted">Pre-accepted</string>
+    <string name="rider">Rider</string>
+    <string name="scheduled_for">Scheduled for</string>
+    <string name="pickup_label">Pickup</string>
+    <string name="dropoff_label">Drop-off</string>
+    <string name="service_label">Service</string>
+    <string name="category_label">Category</string>
+    <string name="status_label">Status</string>
+    <string name="scheduled_status_ready">Pre-accepted</string>
+    <string name="scheduled_status_pending">Pending driver action</string>
+    <string name="calling_rider">Calling rider...</string>
+    <string name="in_app_call">In-App Call</string>
+    <string name="normal_phone_call">Normal Phone Call</string>
+    <string name="phone_number_unavailable">Phone number unavailable</string>
+    <string name="rider_blocked">Rider blocked</string>
+    <string name="block_rider">Block Rider</string>
+    <string name="sos_alert_sent">Emergency Alert sent to Shilota support</string>
+    <string name="google_api_key_missing">Google Maps API key is missing</string>
+    <string name="hang_up">Hang Up</string>
+    <string name="connected">Connected</string>
+    <string name="mute">Mute</string>
+    <string name="unmute">Unmute</string>
+    <string name="speaker_on">Speaker On</string>
+    <string name="speaker_off">Speaker Off</string>
+    <string name="acceptance_settings">Acceptance Settings</string>
+    <string name="acceptance_auto_accept">Enable auto-accept for matching rides</string>
+    <string name="acceptance_max_pickup">Max pickup distance (km)</string>
+    <string name="acceptance_min_fare">Minimum fare</string>
+    <string name="acceptance_ride_types">Accepted ride types</string>
+    <string name="acceptance_pool">Pool rides</string>
+    <string name="acceptance_settings_saved">Acceptance settings saved</string>
+    <string name="acceptance_settings_pick_type">Select at least one ride type</string>
+    <string name="service_capability">Service Capability</string>
+    <string name="service_ride">Ride</string>
+    <string name="service_delivery">Delivery</string>
+    <string name="add_cabso_money">Add Money</string>
+    <string name="read_phone_state_permission_forandroid12">Please Enable Phone Permission on your device for Audio Call and Video Call</string>
+</resources>

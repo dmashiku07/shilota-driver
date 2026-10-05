@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/driver_card"
+    android:padding="16dp"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="@string/edit"
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/colorSecondary"
+        android:textSize="@dimen/driver_type_body"
+        android:fontFamily="@font/font_regular" />
+    <TextView
+        android:id="@+id/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="@string/delete"
+        android:textColor="@color/colorSecondary"
+        android:textSize="@dimen/driver_type_body"
+        android:fontFamily="@font/font_regular" />
+</LinearLayout>

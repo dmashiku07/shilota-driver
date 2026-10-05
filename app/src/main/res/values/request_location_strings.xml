@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="request_pin_location">Exact pin on map · street name unavailable</string>
+    <string name="request_area_location">%1$s area · exact pin on map</string>
+    <string name="request_near_location">Near %1$s</string>
+    <string name="request_pickup_unavailable">To pickup: estimate unavailable</string>
+    <string name="request_trip_unavailable">Trip: estimate unavailable</string>
+    <string name="request_pickup_estimate">To pickup: %1$s km · about %2$d min</string>
+    <string name="request_trip_estimate">Trip: %1$s km · about %2$d min</string>
+</resources>

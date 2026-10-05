@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/group_item_0"
+        android:checkableBehavior="single">
+    <item
+        android:id="@+id/menuNone"
+        android:title=""
+        android:visible="false" /></group>
+    <group
+        android:id="@+id/group_item_1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/payment_menu"
+            android:icon="@drawable/payment"
+            android:title="@string/payment" />
+        <item
+            android:id="@+id/subscription_plans_menu"
+            android:icon="@drawable/ic_onboarding_doc"
+            android:title="@string/subscription_plans" />
+    </group>
+    <group
+        android:id="@+id/group_item_2"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/ride_details_menu"
+            android:icon="@drawable/ride"
+            android:title="@string/ridedetail" />
+        <item
+            android:id="@+id/lost_items_menu"
+            android:icon="@drawable/ride"
+            android:title="@string/lost_items" />
+        <item
+            android:id="@+id/destination_broadcast_menu"
+            android:icon="@drawable/ride"
+            android:title="@string/destination_broadcast_menu" />
+    </group>
+  <!--  <group
+        android:id="@+id/group_item_3"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/ride_earning_menu"
+            android:icon="@drawable/wallet"
+            android:title="@string/rideearnings" />
+    </group>
+
+    <group
+        android:id="@+id/group_item_4"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/advertisement_menu"
+            android:icon="@drawable/advertise"
+            android:title="@string/advertisement" />
+    </group>-->
+    <group
+        android:id="@+id/group_item_5"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/help_menu"
+            android:icon="@drawable/help"
+            android:title="@string/help" />
+    </group>
+</menu>

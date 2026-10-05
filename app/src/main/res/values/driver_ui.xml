@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <color name="driver_canvas">#F6F7F9</color>
+    <color name="driver_ink">#25262B</color>
+    <color name="driver_soft">#FFF1EB</color>
+    <color name="driver_soft_line">#F8D5C9</color>
+    <color name="driver_line">#E5E6EA</color>
+    <color name="driver_muted">#686B73</color>
+    <dimen name="driver_space_small">8dp</dimen>
+    <dimen name="driver_space_medium">12dp</dimen>
+    <dimen name="driver_space_large">16dp</dimen>
+    <dimen name="driver_action_height">48dp</dimen>
+</resources>

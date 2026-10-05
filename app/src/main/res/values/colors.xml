@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F04E29</color>
+    <color name="colorPrimaryDark">#D84322</color>
+    <color name="colorSecondary">#FFFFFF</color>
+    <color name="colorAccent">#9C9B9B</color>
+
+    <color name="white">#ffffff</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="textPrimary">#1E1E1E</color>
+    <color name="textsecondary">#474747</color>
+    <color name="texttertiary">#9C9B9B</color>
+    <color name="linecolor">#C9C9C9</color>
+    <color name="greentrans">#951FB545</color>
+    <color name="color">#027148</color>
+    <color name="green">#1FB545</color>
+    <color name="graphcolor">#ec8928</color>
+    <color name="red">#D22121</color>
+    <color name="blue">#136FCD</color>
+    <color name="lightblue">#E6EEF5</color>
+    <color name="transparent">#00000000</color>
+    <color name="notification">#fe9352</color>
+    <color name="dropLocationBG">#2318f0</color>
+    <color name="pickupLocationBG">#00d2ff</color>
+    <color name="call_red">#fe063b</color>
+    <color name="call_green">#48cd68</color>
+    <color name="white_opacity">#42ffffff</color>
+    <color name="divider">#C9C9C9</color>
+    <color name="security_lbl_bg">#606060</color>
+    <color name="vehicle_insp_bottom">#bdbdbd</color>
+    <color name="rating_color">#f9db17</color>
+    <color name="dashboard_star_color">#ff9352</color>
+    <color name="dashboard_line">#e6e6e6</color>
+    <color name="colorBlack">#000000</color>
+</resources>

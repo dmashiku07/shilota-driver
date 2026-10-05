@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="10dp">
+        <LinearLayout
+            android:id="@+id/messageCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/whitebg"
+            android:orientation="vertical"
+            android:padding="12dp">
+            <TextView
+                android:id="@+id/senderText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font_regular"
+                android:textColor="@color/textsecondary"
+                android:textSize="@dimen/driver_type_caption" />
+            <TextView
+                android:id="@+id/messageText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/font_regular"
+                android:textColor="@color/textPrimary"
+                android:textSize="@dimen/driver_type_body" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>

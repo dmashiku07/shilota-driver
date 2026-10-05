@@ -1,0 +1,345 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="ShilotaFont">
+        <item name="android:fontFamily">@font/font_regular</item>
+        <item name="fontFamily">@font/font_regular</item>
+        <item name="android:textColor">@color/textPrimary</item>
+        <item name="android:textColorHint">@color/texttertiary</item>
+    </style>
+    <style name="ShilotaTextAppearance" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/font_regular</item>
+        <item name="fontFamily">@font/font_regular</item>
+        <item name="android:textColor">@color/textPrimary</item>
+    </style>
+    <style name="ShilotaTextAppearance.Body" parent="ShilotaTextAppearance">
+        <item name="android:textSize">@dimen/driver_type_body</item>
+        <item name="android:textColor">@color/textsecondary</item>
+    </style>
+    <style name="ShilotaTextAppearance.Title" parent="ShilotaTextAppearance">
+        <item name="android:textSize">@dimen/driver_type_heading</item>
+        <item name="android:textColor">@color/textPrimary</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="ShilotaEditText" parent="Widget.AppCompat.EditText">
+        <item name="android:fontFamily">@font/font_regular</item>
+        <item name="fontFamily">@font/font_regular</item>
+        <item name="android:textSize">@dimen/driver_type_body</item>
+        <item name="android:textColor">@color/textPrimary</item>
+        <item name="android:textColorHint">@color/texttertiary</item>
+        <item name="android:backgroundTint">@null</item>
+        <item name="backgroundTint">@null</item>
+        <item name="colorControlNormal">@color/linecolor</item>
+        <item name="colorControlActivated">@color/textPrimary</item>
+        <item name="android:paddingStart">12dp</item>
+        <item name="android:paddingEnd">12dp</item>
+        <item name="android:background">@drawable/driver_field</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+    </style>
+    <style name="ShilotaButton" parent="Widget.AppCompat.Button">
+        <item name="android:fontFamily">@font/font_regular</item>
+        <item name="fontFamily">@font/font_regular</item>
+        <item name="android:textSize">@dimen/driver_type_body</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:background">@drawable/button_style</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+    </style>
+    <style name="ShilotaMaterialButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:fontFamily">@font/font_regular</item>
+        <item name="fontFamily">@font/font_regular</item>
+        <item name="android:textSize">@dimen/driver_type_body</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="textAllCaps">false</item>
+        <item name="backgroundTint">@color/colorPrimary</item>
+        <item name="cornerRadius">16dp</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+    <style name="ShilotaAppBase">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:fontFamily">@font/font_regular</item>
+        <item name="fontFamily">@font/font_regular</item>
+        <item name="android:windowBackground">@color/colorSecondary</item>
+        <item name="android:textColorPrimary">@color/textPrimary</item>
+        <item name="android:textColorSecondary">@color/textsecondary</item>
+        <item name="android:textColorHint">@color/texttertiary</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+        <item name="colorControlHighlight">@color/colorPrimary</item>
+        <item name="android:editTextStyle">@style/ShilotaEditText</item>
+        <item name="editTextStyle">@style/ShilotaEditText</item>
+        <item name="android:buttonStyle">@style/ShilotaButton</item>
+        <item name="buttonStyle">@style/ShilotaButton</item>
+        <item name="materialButtonStyle">@style/ShilotaMaterialButton</item>
+        <item name="android:textViewStyle">@style/ShilotaTextView</item>
+    </style>
+    <style name="ShilotaTextView" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/font_regular</item>
+        <item name="fontFamily">@font/font_regular</item>
+        <item name="android:textColor">@color/textPrimary</item>
+        <item name="android:textSize">@dimen/driver_type_body</item>
+    </style>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:fontFamily">@font/font_regular</item>
+        <item name="fontFamily">@font/font_regular</item>
+        <item name="android:windowBackground">@color/colorSecondary</item>
+        <item name="android:textColorPrimary">@color/textPrimary</item>
+        <item name="android:textColorSecondary">@color/textsecondary</item>
+        <item name="android:textColorHint">@color/texttertiary</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+        <item name="colorControlNormal">@color/linecolor</item>
+        <item name="android:editTextStyle">@style/ShilotaEditText</item>
+        <item name="editTextStyle">@style/ShilotaEditText</item>
+        <item name="android:buttonStyle">@style/ShilotaButton</item>
+        <item name="buttonStyle">@style/ShilotaButton</item>
+        <item name="materialButtonStyle">@style/ShilotaMaterialButton</item>
+        <item name="android:textViewStyle">@style/ShilotaTextView</item>
+    </style>
+    <style name="SplashTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/transparent</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:fontFamily">@font/font_regular</item>
+        <item name="fontFamily">@font/font_regular</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:textColorPrimary">@color/textPrimary</item>
+        <item name="android:textColorSecondary">@color/textsecondary</item>
+        <item name="android:textColorHint">@color/texttertiary</item>
+        <item name="android:editTextStyle">@style/ShilotaEditText</item>
+        <item name="editTextStyle">@style/ShilotaEditText</item>
+        <item name="android:buttonStyle">@style/ShilotaButton</item>
+        <item name="buttonStyle">@style/ShilotaButton</item>
+        <item name="materialButtonStyle">@style/ShilotaMaterialButton</item>
+        <item name="android:textViewStyle">@style/ShilotaTextView</item>
+    </style>
+    <style name="WelcomeTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:fontFamily">@font/font_regular</item>
+        <item name="fontFamily">@font/font_regular</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowBackground">@color/colorSecondary</item>
+        <item name="android:textColorPrimary">@color/textPrimary</item>
+        <item name="android:textColorSecondary">@color/textsecondary</item>
+        <item name="android:textColorHint">@color/texttertiary</item>
+        <item name="android:buttonStyle">@style/ShilotaButton</item>
+        <item name="buttonStyle">@style/ShilotaButton</item>
+        <item name="materialButtonStyle">@style/ShilotaMaterialButton</item>
+        <item name="android:textViewStyle">@style/ShilotaTextView</item>
+    </style>
+    <style name="MainTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:fontFamily">@font/font_regular</item>
+        <item name="fontFamily">@font/font_regular</item>
+        <item name="android:windowBackground">@color/colorSecondary</item>
+        <item name="android:textColorPrimary">@color/textPrimary</item>
+        <item name="android:textColorSecondary">@color/textsecondary</item>
+        <item name="android:textColorHint">@color/texttertiary</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+        <item name="colorControlNormal">@color/linecolor</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+        <item name="android:editTextStyle">@style/ShilotaEditText</item>
+        <item name="editTextStyle">@style/ShilotaEditText</item>
+        <item name="android:buttonStyle">@style/ShilotaButton</item>
+        <item name="buttonStyle">@style/ShilotaButton</item>
+        <item name="materialButtonStyle">@style/ShilotaMaterialButton</item>
+        <item name="android:textViewStyle">@style/ShilotaTextView</item>
+    </style>
+    <style name="AppTheme.Dialog" parent="Base.Theme.AppCompat.Light.Dialog.FixedSize">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@null</item>
+    </style>
+    <style name="CallTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:fontFamily">@font/font_regular</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:statusBarColor">#151210</item>
+        <item name="android:navigationBarColor">#100E0D</item>
+        <item name="android:windowBackground">@drawable/call_screen_background</item>
+    </style>
+    <style name="MapsTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:fontFamily">@font/font_regular</item>
+        <item name="fontFamily">@font/font_regular</item>
+        <item name="android:windowBackground">@color/colorSecondary</item>
+        <item name="android:textColorPrimary">@color/textPrimary</item>
+        <item name="android:textColorSecondary">@color/textsecondary</item>
+        <item name="android:textColorHint">@color/texttertiary</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+        <item name="android:editTextStyle">@style/ShilotaEditText</item>
+        <item name="editTextStyle">@style/ShilotaEditText</item>
+        <item name="android:buttonStyle">@style/ShilotaButton</item>
+        <item name="buttonStyle">@style/ShilotaButton</item>
+        <item name="materialButtonStyle">@style/ShilotaMaterialButton</item>
+        <item name="android:textViewStyle">@style/ShilotaTextView</item>
+    </style>
+    <style name="TimerTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:fontFamily">@font/font_regular</item>
+        <item name="fontFamily">@font/font_regular</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+        <item name="android:windowBackground">@color/colorSecondary</item>
+        <item name="android:textColorPrimary">@color/textPrimary</item>
+        <item name="android:textColorSecondary">@color/textsecondary</item>
+        <item name="android:textColorHint">@color/texttertiary</item>
+        <item name="android:editTextStyle">@style/ShilotaEditText</item>
+        <item name="editTextStyle">@style/ShilotaEditText</item>
+        <item name="android:buttonStyle">@style/ShilotaButton</item>
+        <item name="buttonStyle">@style/ShilotaButton</item>
+        <item name="materialButtonStyle">@style/ShilotaMaterialButton</item>
+        <item name="android:textViewStyle">@style/ShilotaTextView</item>
+    </style>
+    <style name="ThemeActionbar" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:fontFamily">@font/font_regular</item>
+        <item name="fontFamily">@font/font_regular</item>
+        <item name="android:windowBackground">@color/colorSecondary</item>
+        <item name="android:textColorPrimary">@color/textPrimary</item>
+        <item name="android:textColorSecondary">@color/textsecondary</item>
+        <item name="android:textColorHint">@color/texttertiary</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+        <item name="colorControlNormal">@color/linecolor</item>
+        <item name="android:editTextStyle">@style/ShilotaEditText</item>
+        <item name="editTextStyle">@style/ShilotaEditText</item>
+        <item name="android:buttonStyle">@style/ShilotaButton</item>
+        <item name="buttonStyle">@style/ShilotaButton</item>
+        <item name="materialButtonStyle">@style/ShilotaMaterialButton</item>
+        <item name="android:textViewStyle">@style/ShilotaTextView</item>
+    </style>
+    <style name="datepickerCustom" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+    <style name="TextInputLayoutDesign">
+        <item name="colorControlActivated">@color/colorPrimary</item>
+        <item name="colorControlHighlight">@color/colorPrimary</item>
+        <item name="android:textColor">@color/textPrimary</item>
+        <item name="android:textColorHint">@color/texttertiary</item>
+        <item name="android:textColorLink">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/driver_type_body</item>
+        <item name="android:fontFamily">@font/font_regular</item>
+        <item name="fontFamily">@font/font_regular</item>
+        <item name="hintTextColor">@color/textPrimary</item>
+        <item name="android:colorAccent">@color/colorPrimary</item>
+        <item name="boxBackgroundColor">@color/colorSecondary</item>
+        <item name="boxStrokeColor">@color/linecolor</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxStrokeWidthFocused">1dp</item>
+    </style>
+    <style name="TabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">@dimen/driver_type_body</item>
+        <item name="android:fontFamily">@font/font_regular</item>
+        <item name="fontFamily">@font/font_regular</item>
+    </style>
+    <style name="Color1SwitchStyle">
+        <item name="colorControlActivated">@color/greentrans</item>
+    </style>
+    <style name="NavigationDrawerTextStyle">
+        <item name="android:fontFamily">@font/font_regular</item>
+        <item name="fontFamily">@font/font_regular</item>
+        <item name="android:textColor">@color/textPrimary</item>
+        <item name="android:textSize">@dimen/driver_type_body</item>
+    </style>
+    <style name="DialogStyle" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:fontFamily">@font/font_regular</item>
+        <item name="fontFamily">@font/font_regular</item>
+        <item name="android:windowBackground">@color/colorSecondary</item>
+        <item name="android:textColorPrimary">@color/textPrimary</item>
+        <item name="android:textColorSecondary">@color/textsecondary</item>
+        <item name="android:statusBarColor" tools:ignore="NewApi">@color/colorWhite</item>
+        <item name="android:windowLightStatusBar" tools:ignore="NewApi">true</item>
+        <item name="android:editTextStyle">@style/ShilotaEditText</item>
+        <item name="editTextStyle">@style/ShilotaEditText</item>
+        <item name="android:buttonStyle">@style/ShilotaButton</item>
+        <item name="buttonStyle">@style/ShilotaButton</item>
+        <item name="materialButtonStyle">@style/ShilotaMaterialButton</item>
+        <item name="android:textViewStyle">@style/ShilotaTextView</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="MainTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="MainTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/colorPrimary</item>
+        <item name="colorControlActivated">@color/rating_color</item>
+        <item name="android:gravity">end</item>
+    </style>
+    <style name="HintLabel" parent="@android:style/TextAppearance">
+        <item name="android:textSize">@dimen/driver_type_caption</item>
+        <item name="android:textColor">@color/texttertiary</item>
+        <item name="android:fontFamily">@font/font_regular</item>
+        <item name="fontFamily">@font/font_regular</item>
+    </style>
+    <style name="OTPTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:fontFamily">@font/font_regular</item>
+        <item name="fontFamily">@font/font_regular</item>
+        <item name="android:windowBackground">@color/colorSecondary</item>
+        <item name="android:textColorPrimary">@color/textPrimary</item>
+        <item name="android:textColorSecondary">@color/textsecondary</item>
+        <item name="android:editTextStyle">@style/ShilotaEditText</item>
+        <item name="editTextStyle">@style/ShilotaEditText</item>
+        <item name="android:buttonStyle">@style/ShilotaButton</item>
+        <item name="buttonStyle">@style/ShilotaButton</item>
+        <item name="materialButtonStyle">@style/ShilotaMaterialButton</item>
+        <item name="android:textViewStyle">@style/ShilotaTextView</item>
+    </style>
+    <style name="PrimaryTextBold1" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textColor">@color/textPrimary</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@font/font_regular</item>
+        <item name="android:textSize">@dimen/driver_type_heading</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="PrimaryTextBold2" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textColor">@color/textPrimary</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@font/font_regular</item>
+        <item name="android:textSize">@dimen/driver_type_body</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="GrayTextNormal" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textColor">@color/textsecondary</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@font/font_regular</item>
+        <item name="android:textSize">@dimen/driver_type_body</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>

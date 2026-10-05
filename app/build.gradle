@@ -1,0 +1,124 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'com.google.android.libraries.mapsplatform.secrets-gradle-plugin'
+
+def secretsProperties = new Properties()
+def secretsFile = rootProject.file("secrets.properties")
+if (secretsFile.exists()) {
+    secretsFile.withInputStream { stream ->
+        secretsProperties.load(stream)
+    }
+}
+def googleMapsApiKey = secretsProperties.getProperty("API_KEY", "")
+
+android {
+
+    // Development uses Android's standard debug signing.
+    // Configure release signing separately with credentials kept outside Git.
+    applicationVariants.all { variant ->
+        variant.outputs.all { output ->
+            def project = "shilota driver"
+
+            def newApkName = project + ".apk"
+
+            outputFileName = new File(newApkName)
+        }
+    }
+    namespace "com.driver.cabiappdriver"
+    compileSdk 36
+    defaultConfig {
+        applicationId "com.getcoregroup.shilotadriver"
+        minSdkVersion 23
+        targetSdk 35
+        versionCode 9
+        versionName "1.9"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+        manifestPlaceholders = [API_KEY: googleMapsApiKey]
+        buildConfigField "String", "API_KEY", "\"${googleMapsApiKey}\""
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    lintOptions {
+        abortOnError false
+        checkReleaseBuilds false
+    }
+    buildFeatures {
+        buildConfig true
+        dataBinding true
+        // for view binding:
+        // viewBinding true
+    }
+//    dexOptions {
+//        javaMaxHeapSize "4g"
+//    }
+    compileOptions {
+        sourceCompatibility = '1.8'
+        targetCompatibility = '1.8'
+    }
+}
+
+
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.exifinterface:exifinterface:1.3.4'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test:runner:1.4.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    implementation('io.socket:socket.io-client:1.0.0') {
+        exclude group: 'org.json', module: 'json'
+    }
+    implementation 'com.faendir:acra:4.10.0'
+    implementation 'com.google.android.material:material:1.6.1'
+    implementation 'com.google.android.gms:play-services-maps:18.1.0'
+    implementation 'com.google.android.gms:play-services-location:21.0.1'
+    implementation 'com.google.android.gms:play-services-auth:20.3.0'
+    implementation 'com.google.android.gms:play-services-places:17.0.0'
+    implementation 'com.google.android.libraries.places:places:2.7.0'
+    implementation 'com.google.firebase:firebase-core:21.1.1'
+    implementation 'com.google.firebase:firebase-auth:21.1.0'
+    implementation 'com.google.firebase:firebase-messaging:23.1.0'
+    implementation 'com.google.code.gson:gson:2.9.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.5'
+//    implementation 'com.wang.avi:library:2.1.3'
+//    implementation 'com.github.wang.avi:AVLoadingIndicatorView:2.1.3'
+    implementation 'com.github.ybq:Android-SpinKit:1.4.0'
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'com.github.bumptech.glide:glide:4.13.2'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.13.2'
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+    implementation 'com.facebook.android:facebook-login:9.0.0'
+    implementation 'com.airbnb.android:lottie:3.6.1'
+    implementation 'com.jjoe64:graphview:4.2.2'
+    implementation 'com.firebaseui:firebase-ui-auth:8.0.1'
+    implementation 'com.googlecode.libphonenumber:libphonenumber:8.11.1'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.8.10"
+    implementation 'io.github.webrtc-sdk:android:125.6422.07'
+
+    implementation 'com.hbb20:ccp:2.7.3'
+}
+
+configurations.all {
+    resolutionStrategy {
+        force 'androidx.core:core-ktx:1.10.1'
+        force 'androidx.core:core:1.10.1'
+        force 'org.jetbrains.kotlin:kotlin-stdlib:1.8.10'
+        force 'org.jetbrains.kotlin:kotlin-stdlib-common:1.8.10'
+        force 'org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.10'
+        force 'org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.10'
+        force 'androidx.annotation:annotation:1.6.0'
+    }
+}
+
+
+apply plugin: 'com.google.gms.google-services'

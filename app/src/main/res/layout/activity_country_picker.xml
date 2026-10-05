@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.driver.countrypicker.Country_picker"
+    android:background="@color/driver_canvas">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/back_bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:src="@drawable/back"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/back_bt">
+        <EditText
+            android:id="@+id/number_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your number"
+            android:inputType="number"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@drawable/driver_field"
+            android:backgroundTint="@null"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="@dimen/driver_type_body"
+            android:textColor="@color/textPrimary"
+            android:textColorHint="@color/driver_muted"
+            app:backgroundTint="@null"
+            android:minHeight="48dp"
+            android:fontFamily="@font/font_regular" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/country_pic_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text">
+        <com.hbb20.CountryCodePicker
+            android:id="@+id/country_picker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/otp_bt"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:background="@color/call_green"
+        android:padding="10dp"
+        app:cardBackgroundColor="@color/notification"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/country_pic_layout">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="getOtp"
+            android:textStyle="bold"
+            android:textSize="@dimen/driver_type_body"
+            app:layout_constraintTop_toTopOf="parent"
+            android:fontFamily="@font/font_regular" />
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/driver_canvas">
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:theme="@style/ThemeOverlay.AppCompat.Light"
+            android:elevation="0dp"
+            android:stateListAnimator="@null">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                app:contentInsetLeft="10dp"
+                app:contentInsetStart="10dp">
+                <include
+                    layout="@layout/actionbar_layout"
+                    android:layout_width="48dp"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/font_regular"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:paddingBottom="0dp"
+                    android:text="@string/subscription_plans"
+                    android:textColor="@color/textPrimary"
+                    android:textSize="@dimen/driver_type_heading"
+                    android:gravity="center_vertical"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:paddingTop="0dp"
+                    android:textStyle="bold"
+                    android:maxLines="2"
+                    android:ellipsize="end" />
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.AppBarLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="16dp"
+                android:paddingTop="8dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="16dp">
+                <LinearLayout
+                    android:id="@+id/currentSubscriptionCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:background="@drawable/driver_dark_card"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    <TextView
+                        android:id="@+id/currentSubscriptionLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/font_regular"
+                        android:text="@string/current_subscription"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/driver_type_body" />
+                    <TextView
+                        android:id="@+id/currentSubscriptionName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/font_regular"
+                        android:text="@string/no_active_subscription"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/driver_type_heading"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/currentSubscriptionStatus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:fontFamily="@font/font_regular"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/driver_type_body" />
+                    <TextView
+                        android:id="@+id/currentSubscriptionExpiry"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/font_regular"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/driver_type_body" />
+                    <TextView
+                        android:id="@+id/currentSubscriptionLimit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/font_regular"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/driver_type_body" />
+                    <TextView
+                        android:id="@+id/currentSubscriptionUsage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/font_regular"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/driver_type_body" />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/availablePlansLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/font_regular"
+                    android:text="@string/available_plans"
+                    android:textColor="@color/textPrimary"
+                    android:textSize="@dimen/driver_type_body" />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+            <include
+                android:id="@+id/progress"
+                layout="@layout/progress_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+            <include
+                layout="@layout/null_lay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

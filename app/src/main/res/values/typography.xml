@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Poppins; sp respects the device font scale. Reuse by text role. -->
+    <dimen name="driver_type_caption">12sp</dimen>
+    <dimen name="driver_type_body">14sp</dimen>
+    <dimen name="driver_type_heading">18sp</dimen>
+    <dimen name="driver_type_total">24sp</dimen>
+    <dimen name="driver_type_badge">10sp</dimen>
+    <dimen name="driver_type_monogram">32sp</dimen>
+</resources>

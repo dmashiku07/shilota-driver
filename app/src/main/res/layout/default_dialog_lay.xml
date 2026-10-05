@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/driver_card"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4">
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:padding="16dp"
+            android:src="@drawable/close" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="top">
+        <ImageView
+            android:id="@+id/tick_imgview"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/tick" />
+        <TextView
+            android:id="@+id/common_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tick_imgview"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="@string/thankyou"
+            android:textColor="@color/textPrimary"
+            android:textSize="@dimen/driver_type_total"
+            android:fontFamily="@font/font_regular" />
+        <TextView
+            android:id="@+id/dialog_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/common_msg"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:text="@string/contact_success_dialog"
+            android:textColor="@color/textPrimary"
+            android:textSize="@dimen/driver_type_heading"
+            android:fontFamily="@font/font_regular" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/billDetailsLay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    </LinearLayout>
+</LinearLayout>

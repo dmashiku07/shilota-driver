@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="profile_photo_preview">Profile photo preview</string>
+    <string name="profile_photo_prepare_failed">Could not open this photo. Please choose another image.</string>
+    <string name="profile_photo_upload_failed">Could not save your photo. Tap Save to retry.</string>
+    <string name="profile_photo_saved">Profile photo updated successfully</string>
+    <string name="change_profile_photo">Change profile photo</string>
+</resources>

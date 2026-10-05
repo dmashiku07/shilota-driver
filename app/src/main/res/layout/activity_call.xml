@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/call_screen_background"
+    android:keepScreenOn="true"
+    tools:ignore="HardcodedText">
+    <LinearLayout
+        android:id="@+id/parentLay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingStart="16dp"
+        android:paddingTop="28dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="34dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/call_brand_surface"
+            android:drawableStart="@android:drawable/ic_lock_lock"
+            android:drawablePadding="7dp"
+            android:fontFamily="@font/font_regular"
+            android:letterSpacing="0.1"
+            android:text="SHILOTA  •  SECURE CALL"
+            android:textAllCaps="true"
+            android:textColor="#FFD7CBC5"
+            android:textSize="@dimen/driver_type_caption"
+            android:textStyle="bold" />
+        <Space
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_weight="2" />
+        <TextView
+            android:id="@+id/userImage"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:background="@drawable/call_avatar_surface"
+            android:fontFamily="@font/font_regular"
+            android:gravity="center"
+            android:text="S"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/driver_type_monogram"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/font_regular"
+            android:gravity="center"
+            android:maxLines="2"
+            android:text="User Name"
+            android:textColor="@color/white"
+            android:textSize="@dimen/driver_type_total"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/callType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/call_status_surface"
+            android:fontFamily="@font/font_regular"
+            android:gravity="center"
+            android:text="@string/ringing"
+            android:textColor="#FFFFA68F"
+            android:textSize="@dimen/driver_type_body"
+            android:textStyle="normal" />
+        <TextView
+            android:id="@+id/callTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:fontFamily="@font/font_regular"
+            android:gravity="center"
+            android:letterSpacing="0.08"
+            android:text="00:00"
+            android:textColor="#FFD7CBC5"
+            android:textSize="@dimen/driver_type_heading"
+            android:visibility="gone"
+            android:textStyle="normal" />
+        <Space
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_weight="3" />
+        <LinearLayout
+            android:id="@+id/acceptLay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/btnDecline"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:background="@drawable/call_control_surface"
+                    android:clickable="true"
+                    android:contentDescription="@string/decline"
+                    android:focusable="true"
+                    android:padding="22dp"
+                    android:src="@drawable/call_cancel" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/font_regular"
+                    android:text="@string/decline"
+                    android:textColor="#FFE9E1DD"
+                    android:textSize="@dimen/driver_type_body"
+                    android:textStyle="normal" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/btnAccept"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:background="@drawable/call_answer_round_background"
+                    android:clickable="true"
+                    android:contentDescription="@string/answer"
+                    android:focusable="true"
+                    android:padding="22dp"
+                    android:rotation="135"
+                    android:src="@drawable/call_cancel" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/font_regular"
+                    android:text="@string/answer"
+                    android:textColor="#FFE9E1DD"
+                    android:textSize="@dimen/driver_type_body"
+                    android:textStyle="normal" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/callControlsLay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+            <TextView
+                android:id="@+id/btnMute"
+                android:layout_width="84dp"
+                android:layout_height="84dp"
+                android:layout_marginHorizontal="8dp"
+                android:background="@drawable/call_control_surface"
+                android:drawableTop="@drawable/call_atten"
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/font_regular"
+                android:gravity="center"
+                android:padding="14dp"
+                android:text="@string/mute"
+                android:textColor="#FFE9E1DD"
+                android:textSize="@dimen/driver_type_caption"
+                android:textStyle="normal" />
+            <TextView
+                android:id="@+id/btnSpeaker"
+                android:layout_width="84dp"
+                android:layout_height="84dp"
+                android:layout_marginHorizontal="8dp"
+                android:background="@drawable/call_control_surface"
+                android:drawableTop="@drawable/speaker"
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/font_regular"
+                android:gravity="center"
+                android:padding="14dp"
+                android:text="@string/speaker_on"
+                android:textColor="#FFE9E1DD"
+                android:textSize="@dimen/driver_type_caption"
+                android:textStyle="normal" />
+            <TextView
+                android:id="@+id/btnHangup"
+                android:layout_width="84dp"
+                android:layout_height="84dp"
+                android:layout_marginHorizontal="8dp"
+                android:background="@drawable/call_end_round_background"
+                android:drawableTop="@drawable/call_cancel"
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/font_regular"
+                android:gravity="center"
+                android:padding="14dp"
+                android:text="@string/hang_up"
+                android:textColor="@color/white"
+                android:textSize="@dimen/driver_type_caption"
+                android:textStyle="normal" />
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/call_fragment_container"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:visibility="gone" />
+</FrameLayout>

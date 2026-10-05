@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="accepted_offer_channel">Accepted ride offers</string>
+    <string name="accepted_offer_title">Your offer was accepted</string>
+    <string name="accepted_offer_body">The passenger chose you. Tap to navigate to pickup.</string>
+    <string name="open_accepted_ride">Open accepted ride</string>
+    <string name="accepted_ride_load_failed">Your ride is accepted. Tap Open accepted ride to retry loading it.</string>
+</resources>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/driver_canvas"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/upcoming_rides"
+        android:textColor="@color/textPrimary"
+        android:textSize="@dimen/driver_type_heading"
+        android:textStyle="bold"
+        android:fontFamily="@font/font_regular" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="@string/upcoming_rides_subtitle"
+        android:textColor="@color/textsecondary"
+        android:textSize="@dimen/driver_type_body"
+        android:fontFamily="@font/font_regular" />
+    <TextView
+        android:id="@+id/emptyText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal"
+        android:paddingTop="20dp"
+        android:text="@string/no_upcoming_rides"
+        android:textColor="@color/textsecondary"
+        android:fontFamily="@font/font_regular"
+        android:textSize="@dimen/driver_type_body" />
+    <ScrollView
+        android:id="@+id/rideScroll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:clipToPadding="false">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/rideList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
