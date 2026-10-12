@@ -44,14 +44,14 @@ public class ActivityEnterPhoneNumber extends BaseActivity implements View.OnCli
 
     private static final String TAG = ActivityEnterPhoneNumber.class.getSimpleName();
     ImageView ccp;
-    EditText phonenumber, text1, text2, text3, text4, text5, text6;
+    EditText phonenumber, text1, text2, text3, text4;
     int exit = 0;
     AppCompatButton btngetotp, verify;
     LinearLayout layout_one, layout_two;
     ProgressDialog progressDialog;
     ApiInterface apiInterface;
     UserData userdata;
-    String returned_otp = "", txtOTP ="";
+    String txtOTP ="";
     AppCompatTextView txt_resend_otp, txt_phonenumber_entered, yourOTP;
 
     @Override
@@ -78,8 +78,6 @@ public class ActivityEnterPhoneNumber extends BaseActivity implements View.OnCli
         text2 = findViewById(R.id.text2);
         text3 = findViewById(R.id.text3);
         text4 = findViewById(R.id.text4);
-        text5 = findViewById(R.id.text5);
-        text6 = findViewById(R.id.text6);
         verify = findViewById(R.id.verify);
         btngetotp.setOnClickListener(this);
         verify.setOnClickListener(this);
@@ -91,17 +89,13 @@ public class ActivityEnterPhoneNumber extends BaseActivity implements View.OnCli
         text1.addTextChangedListener(new OtpTextWatcher(text1, text2));
         text2.addTextChangedListener(new OtpTextWatcher(text2, text3));
         text3.addTextChangedListener(new OtpTextWatcher(text3, text4));
-        text4.addTextChangedListener(new OtpTextWatcher(text4, text5));
-        text5.addTextChangedListener(new OtpTextWatcher(text5, text6));
-        text6.addTextChangedListener(new OtpTextWatcher(text6, null));
+        text4.addTextChangedListener(new OtpTextWatcher(text4, null));
 
         // OnKeyListener for moving back to the previous EditText when the backspace key is pressed
         text1.setOnKeyListener(new GenericKeyEvent(text1, null));
         text2.setOnKeyListener(new GenericKeyEvent(text2, text1));
         text3.setOnKeyListener(new GenericKeyEvent(text3, text2));
         text4.setOnKeyListener(new GenericKeyEvent(text4,text3));
-        text5.setOnKeyListener(new GenericKeyEvent(text5,text4));
-        text6.setOnKeyListener(new GenericKeyEvent(text6,text5));
 
         /*phonenumber.setText("+255 ");
         phonenumber.addTextChangedListener(new TextWatcher() {
@@ -215,20 +209,10 @@ public class ActivityEnterPhoneNumber extends BaseActivity implements View.OnCli
             txtOTP = text1.getText().toString().trim()
                     + text2.getText().toString().trim()
                     + text3.getText().toString().trim()
-                    + text4.getText().toString().trim()
-                    + text5.getText().toString().trim()
-                    + text6.getText().toString().trim();
+                    + text4.getText().toString().trim();
 
-            if (txtOTP.length() == 6) {
-                if (txtOTP.equals(returned_otp)) {
-                    Intent resultIntent = new Intent();
-                    resultIntent.putExtra("countrycode", "+255");
-                    resultIntent.putExtra("phonenumber", phonenumber.getText().toString().trim());
-                    setResult(Activity.RESULT_OK, resultIntent);
-                    finish();
-                } else {
-                    Toast.makeText(ActivityEnterPhoneNumber.this, getString(R.string.otp_incorrect), Toast.LENGTH_SHORT).show();
-                }
+            if (txtOTP.length() == 4) {
+                verifyOtp(phonenumber.getText().toString().trim(), txtOTP);
             } else {
                 Toast.makeText(ActivityEnterPhoneNumber.this, getString(R.string.otp_empty), Toast.LENGTH_SHORT).show();
             }
@@ -268,8 +252,6 @@ public class ActivityEnterPhoneNumber extends BaseActivity implements View.OnCli
                         Toast.makeText(getApplicationContext(), userdata.message, Toast.LENGTH_SHORT).show();
                         layout_one.setVisibility(View.GONE);
                         layout_two.setVisibility(View.VISIBLE);
-                        returned_otp = userdata.otp;
-
                      //   String dynamicText = userdata.country_code + phoneNumber;
                         String dynamicText = "(+255" + " "+phoneNumber+")";
 
@@ -297,6 +279,46 @@ public class ActivityEnterPhoneNumber extends BaseActivity implements View.OnCli
                 call.cancel();
                 if (progressDialog.isShowing())
                     progressDialog.dismiss();
+            }
+        });
+    }
+
+    private void verifyOtp(String phoneNumber, String otp) {
+        progressDialog.show();
+        HashMap<String, String> map = new HashMap<>();
+        map.put(Constants.TAG_PHONE_NUMBER, normalizeTanzaniaPhoneNumber(phoneNumber));
+        map.put("otp", otp);
+
+        apiInterface.verifyOTP(map).enqueue(new Callback<UserData>() {
+            @Override
+            public void onResponse(Call<UserData> call, Response<UserData> response) {
+                if (progressDialog.isShowing()) {
+                    progressDialog.dismiss();
+                }
+
+                UserData data = response.body();
+                if (response.isSuccessful() && data != null && "true".equals(data.status)) {
+                    Intent resultIntent = new Intent();
+                    resultIntent.putExtra("countrycode", "+255");
+                    resultIntent.putExtra("phonenumber", phonenumber.getText().toString().trim());
+                    setResult(Activity.RESULT_OK, resultIntent);
+                    finish();
+                    return;
+                }
+
+                String message = data != null && data.message != null
+                        ? data.message
+                        : getString(R.string.otp_incorrect);
+                Toast.makeText(ActivityEnterPhoneNumber.this, message, Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onFailure(Call<UserData> call, Throwable t) {
+                call.cancel();
+                if (progressDialog.isShowing()) {
+                    progressDialog.dismiss();
+                }
+                Toast.makeText(ActivityEnterPhoneNumber.this, "OTP verification is unavailable", Toast.LENGTH_SHORT).show();
             }
         });
     }

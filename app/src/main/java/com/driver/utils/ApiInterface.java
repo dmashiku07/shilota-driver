@@ -58,6 +58,10 @@ public interface ApiInterface {
     @FormUrlEncoded
     @POST("api/getotp")
     Call<UserData> getOTP(@FieldMap Map<String, String> params);
+
+    @FormUrlEncoded
+    @POST("api/verifyotp")
+    Call<UserData> verifyOTP(@FieldMap Map<String, String> params);
     @Multipart
     @POST("driverapi/uploaddoc")
     Call<Map<String, String>> uploadDoc(@Header("Authorization") String user_token, @Part MultipartBody.Part image, @Part("user_id") RequestBody user_id, @Part("uploaddocfor") RequestBody uploaddocfor);

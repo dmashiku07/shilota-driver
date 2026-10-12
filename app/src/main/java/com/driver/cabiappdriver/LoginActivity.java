@@ -262,7 +262,7 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener,
             final TextInputLayout phonelay = forgotdialog.findViewById(R.id.phonelay);
             final TextInputLayout otplay = forgotdialog.findViewById(R.id.otplay);
             final TextInputLayout passwordlay = forgotdialog.findViewById(R.id.passwordlay);
-            final String[] returnedOtp = {""};
+            final boolean[] otpRequested = {false};
 
             phone.setFocusable(true);
             if (LocaleManager.isRTL()) {
@@ -285,12 +285,12 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener,
                     } else if (phone.getText().toString().trim().length() < 9) {
                         phonelay.setError(getString(R.string.forgot_password_phone_not_valid));
                         requestFocus(phone);
-                    } else if (returnedOtp[0].equals("")) {
+                    } else if (!otpRequested[0]) {
                         Toast.makeText(LoginActivity.this, getString(R.string.forgot_password_get_otp_first), Toast.LENGTH_SHORT).show();
                     } else if (otp.getText().toString().trim().equals("")) {
                         otplay.setError(getString(R.string.otp_empty));
                         requestFocus(otp);
-                    } else if (!otp.getText().toString().trim().equals(returnedOtp[0])) {
+                    } else if (otp.getText().toString().trim().length() != 4) {
                         otplay.setError(getString(R.string.otp_incorrect));
                         requestFocus(otp);
                     } else if (password.getText().toString().trim().equals("")) {
@@ -317,7 +317,7 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener,
                         requestFocus(phone);
                     } else {
                         ApplicationClass.hideSoftKeyboard(LoginActivity.this, v);
-                        requestOtpForPasswordReset(phone.getText().toString().trim(), returnedOtp);
+                        requestOtpForPasswordReset(phone.getText().toString().trim(), otpRequested);
                     }
                 }
             });
@@ -357,7 +357,7 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener,
                 APP_REQUEST_CODE);
     }
 
-    private void requestOtpForPasswordReset(String phoneNumber, final String[] returnedOtp) {
+    private void requestOtpForPasswordReset(String phoneNumber, final boolean[] otpRequested) {
         progressDialog.show();
         Map<String, String> map = new HashMap<>();
         map.put("phone_number", phoneNumber);
@@ -371,7 +371,7 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener,
                 }
                 UserData data = response.body();
                 if (data != null && "true".equals(data.status)) {
-                    returnedOtp[0] = data.otp == null ? "" : data.otp;
+                    otpRequested[0] = true;
                     Toast.makeText(LoginActivity.this, data.message, Toast.LENGTH_SHORT).show();
                 } else if (data != null) {
                     Toast.makeText(LoginActivity.this, data.message, Toast.LENGTH_SHORT).show();
