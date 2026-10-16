@@ -290,7 +290,7 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener,
                     } else if (otp.getText().toString().trim().equals("")) {
                         otplay.setError(getString(R.string.otp_empty));
                         requestFocus(otp);
-                    } else if (otp.getText().toString().trim().length() != 4) {
+                    } else if (otp.getText().toString().trim().length() != 6) {
                         otplay.setError(getString(R.string.otp_incorrect));
                         requestFocus(otp);
                     } else if (password.getText().toString().trim().equals("")) {

@@ -44,7 +44,7 @@ public class ActivityEnterPhoneNumber extends BaseActivity implements View.OnCli
 
     private static final String TAG = ActivityEnterPhoneNumber.class.getSimpleName();
     ImageView ccp;
-    EditText phonenumber, text1, text2, text3, text4;
+    EditText phonenumber, text1, text2, text3, text4, text5, text6;
     int exit = 0;
     AppCompatButton btngetotp, verify;
     LinearLayout layout_one, layout_two;
@@ -78,6 +78,8 @@ public class ActivityEnterPhoneNumber extends BaseActivity implements View.OnCli
         text2 = findViewById(R.id.text2);
         text3 = findViewById(R.id.text3);
         text4 = findViewById(R.id.text4);
+        text5 = findViewById(R.id.text5);
+        text6 = findViewById(R.id.text6);
         verify = findViewById(R.id.verify);
         btngetotp.setOnClickListener(this);
         verify.setOnClickListener(this);
@@ -89,13 +91,17 @@ public class ActivityEnterPhoneNumber extends BaseActivity implements View.OnCli
         text1.addTextChangedListener(new OtpTextWatcher(text1, text2));
         text2.addTextChangedListener(new OtpTextWatcher(text2, text3));
         text3.addTextChangedListener(new OtpTextWatcher(text3, text4));
-        text4.addTextChangedListener(new OtpTextWatcher(text4, null));
+        text4.addTextChangedListener(new OtpTextWatcher(text4, text5));
+        text5.addTextChangedListener(new OtpTextWatcher(text5, text6));
+        text6.addTextChangedListener(new OtpTextWatcher(text6, null));
 
         // OnKeyListener for moving back to the previous EditText when the backspace key is pressed
         text1.setOnKeyListener(new GenericKeyEvent(text1, null));
         text2.setOnKeyListener(new GenericKeyEvent(text2, text1));
         text3.setOnKeyListener(new GenericKeyEvent(text3, text2));
         text4.setOnKeyListener(new GenericKeyEvent(text4,text3));
+        text5.setOnKeyListener(new GenericKeyEvent(text5,text4));
+        text6.setOnKeyListener(new GenericKeyEvent(text6,text5));
 
         /*phonenumber.setText("+255 ");
         phonenumber.addTextChangedListener(new TextWatcher() {
@@ -209,9 +215,11 @@ public class ActivityEnterPhoneNumber extends BaseActivity implements View.OnCli
             txtOTP = text1.getText().toString().trim()
                     + text2.getText().toString().trim()
                     + text3.getText().toString().trim()
-                    + text4.getText().toString().trim();
+                    + text4.getText().toString().trim()
+                    + text5.getText().toString().trim()
+                    + text6.getText().toString().trim();
 
-            if (txtOTP.length() == 4) {
+            if (txtOTP.length() == 6) {
                 verifyOtp(phonenumber.getText().toString().trim(), txtOTP);
             } else {
                 Toast.makeText(ActivityEnterPhoneNumber.this, getString(R.string.otp_empty), Toast.LENGTH_SHORT).show();
